@@ -1,0 +1,554 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Koh Santepheap", serif;
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+}
+
+/* navbar */
+.navbar {
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar nav a:hover {
+  color: #6c63ff;
+}
+
+.nav-buttons .btn-outline {
+  padding: 8px 16px;
+  border: 1px solid #6c63ff;
+  color: #6c63ff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* hero section */
+.hero {
+  padding: 20% 10%;
+  height: 100%;
+  text-align: center;
+
+}
+
+.hero h1 {
+  font-size: 3.1rem;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  max-width: 70%;
+  margin: 0 auto 30px;
+}
+
+
+
+.hero-buttons .btn-filled,
+.btn-outline {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* .btn-filled {
+  background-color: #6c63ff;
+  border: 1px solid white;
+}
+
+.btn-filled:hover {
+  background-color: white;
+  border: 2px solid #6c63ff;
+  color: #6c63ff;
+  scale: 1.01;
+} */
+
+.btn-outline {
+  border: 2px solid #6a5acd;
+  color: #6a5acd;
+}
+
+.btn-outline:hover {
+  background-color: #6c63ff;
+  color: white;
+  border: 1px solid white;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.features ul,
+.benefits ul,
+.how-it-works ol {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features li,
+.benefits li,
+.how-it-works li {
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
+
+.testimonials blockquote {
+  max-width: 600px;
+  margin: 20px auto;
+  font-style: italic;
+  color: #555;
+}
+
+.cta {
+  padding: 40px 20px;
+}
+
+/*Register and login page */
+.auth-main {
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-container {
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 1.5rem;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-container input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+.auth-container button {
+  padding: 0.8rem;
+  border: 2px solid #6a5acd;
+  color: #6a5acd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.auth-container button:hover {
+  background-color: #6c63ff;
+  color: white;
+  border: 1px solid white;
+}
+
+.auth-container a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
+
+.auth-container p {
+  margin: 10px;
+}
+
+
+/* Services Section */
+.header-section {
+  text-align: center;
+  padding: 10%;
+}
+
+.header-section h1 {
+  font-size: 4.5rem;
+}
+
+.header-section p {
+  font-size: 2.5rem;
+  width: 50%;
+  margin: 0 25%;
+}
+
+.features-list {
+  padding: 30px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.features-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features-list li {
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
+
+.service-feature {
+  margin: 20px auto;
+  padding: 30px 20px;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.service-feature h3 {
+  margin-bottom: 10px;
+}
+
+.testimonials {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.testimonials blockquote {
+  font-style: italic;
+  margin: 10px auto;
+  max-width: 600px;
+}
+
+
+/* About us Section */
+.about-hero {
+  height: 100%;
+  padding: 20% 10%;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.about {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.timeline ul {
+  list-style: none;
+  padding-left: 0;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+.timeline li {
+  padding: 10px 0;
+  border-left: 4px solid #6c63ff;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.member {
+  border-radius: 8px;
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  width: 200px;
+}
+
+.clients .logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.clients img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* blog and blog-post section */
+.blog-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  margin: 15px;
+  padding: 10%;
+  max-width: 300px;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.blog-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.featured-blog {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.featured-blog .blog-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.featured-blog img {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.post-header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.post-header img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.post-content {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.7;
+}
+
+.testimonials {
+  padding: 20px;
+  text-align: center;
+  background-color: #0f0f0f;
+}
+
+.cta {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cta input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  margin: 10px;
+}
+
+.cta button {
+  padding: 10px 20px;
+  /* background: #6c63ff; */
+   background: #6387ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* file Tax Section */
+.contact-form {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-form form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.faq-section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-section details {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.faq-section summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* tools  */
+
+.tools-container {
+  padding: 80px 20px 40px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.tools-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tools-container p {
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.tool-card {
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.tool-card h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.tool-card input {
+  padding: 10px;
+  margin: 10px;
+  width: calc(100% - 40px);
+  max-width: 300px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.tool-card p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #6cfcaf;
+}
+
+/* Footer Section */
+.site-footer {
+  padding: 40px 20px;
+  color: #333;
+  font-family: sans-serif;
+}
+
+.footer-cta {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer-cta h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-cta p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.footer-cta-buttons .btn {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+  margin: 10px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.footer-policy-links a {
+  margin: 0 10px;
+  color: #555;
+  text-decoration: none;
+}

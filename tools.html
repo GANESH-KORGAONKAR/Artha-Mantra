@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Financial Tools</title>
+  <link rel="stylesheet" href="styles/style.css" />
+ 
+</head>
+<body class="dark-theme">
+  <!-- Navbar -->
+  <header class="navbar">
+      <div class="logo">Logo</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="tools.html">Tools</a>
+        <a href="file-tax.html">Tax file</a>
+      </nav>
+      <div class="nav-buttons">
+        <a href="login.html" class="btn-outline">Start</a>
+      </div>
+    </header>
+
+ <!-- Tools Section -->
+  <main class="tools-container">
+    <h1>Financial Tools</h1>
+    <p>Plan smartly with our easy-to-use calculators.</p>
+
+    <div class="tool-card">
+      <h2>EMI Calculator</h2>
+      <input type="number" id="loan" placeholder="Loan Amount (₹)" />
+      <input type="number" id="rate" placeholder="Interest Rate (%)" />
+      <input type="number" id="years" placeholder="Loan Tenure (Years)" />
+      <button onclick="calculateEMI()" class="btn-outline">Calculate EMI</button>
+      <p id="emiResult"></p>
+    </div>
+
+    <div class="tool-card">
+      <h2>Investment Return Calculator</h2>
+      <input type="number" id="initialInvestment" placeholder="Initial Investment (₹)" />
+      <input type="number" id="investmentRate" placeholder="Annual Rate (%)" />
+      <input type="number" id="investmentYears" placeholder="Time (Years)" />
+      <button onclick="calculateInvestment()" class="btn-outline">Calculate Return</button>
+      <p id="investmentResult"></p>
+    </div>
+
+    <div class="tool-card">
+      <h2>Retirement Corpus Calculator</h2>
+      <input type="number" id="currentAge" placeholder="Current Age" />
+      <input type="number" id="retireAge" placeholder="Retirement Age" />
+      <input type="number" id="monthlySaving" placeholder="Monthly Saving (₹)" />
+      <input type="number" id="retirementRate" placeholder="Annual Rate (%)" />
+      <button onclick="calculateRetirement()" class="btn-outline">Calculate Corpus</button>
+      <p id="retirementResult"></p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+    <footer class="site-footer">
+  <div class="footer-cta">
+    <h2>Start Your Tax Journey Today</h2>
+    <p>Join us now to simplify your tax filing and maximize your refunds effortlessly.</p>
+    <div class="footer-cta-buttons">
+      <a href="#" class="btn btn-primary">Sign Up</a>
+      <a href="#" class="btn btn-outline">Learn More</a>
+    </div>
+  </div>
+
+  <div class="footer-links">
+    <div class="footer-column">
+      <h3>Logo</h3>
+    </div>
+    <div class="footer-column">
+      <h4>Financial Services</h4>
+      <ul>
+        <li><a href="#">Tax Filing</a></li>
+        <li><a href="#">Financial Advice</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Customer Support</h4>
+      <ul>
+        <li><a href="#">Blog Insights</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Relume. All rights reserved.</p>
+    <div class="footer-policy-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookies Settings</a>
+    </div>
+  </div>
+</footer>
+
+ <script defer src="scripts/main.js"></script>
+  </body>
+</html>
